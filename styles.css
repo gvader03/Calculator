@@ -1,0 +1,85 @@
+html, body {
+    min-height: 100vh;
+    width: auto;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 1000px;
+    width: 100%;
+    margin: 5px;
+}
+
+.calc-grid {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 700px;
+    width: 600px;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gray;
+    height: 10%;
+    width: 95%;
+    margin-top: 1%;
+}
+
+.row {
+    display: flex;
+    height: 15%;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.num-btn, .dot {
+    height: 100%;
+    width: auto;
+    border: .5px solid black;
+}
+
+.op-btn {
+    height: 100%;
+    width: auto;
+    border: .5px solid black;
+}
+
+.del-btn, .clear-btn {
+    height: 100%;
+    width: auto;
+    border: .5px solid black;
+}
+
+.equals-btn {
+    height: 100%;
+    width: auto;
+    border: .5px solid black;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    height: 3vh;
+    width: auto;
+}
