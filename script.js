@@ -29,11 +29,12 @@ dot.addEventListener('click', addDot);
 
 function deleteOne() {
   if(operator === '' && numTwo === ''){
-    if(input.length > 1){
+    if(input.toString().length > 1){
       input.textContent = input.textContent.toString().slice(0, -1);
-      numOne = numOne.toString().slice(0,-1);
+      numOne = input.textContent;
     }else {
       input.textContent = 0;
+      numOne = 0;
     }
 }else if(operator !== '' && numTwo === ''){
     input.textContent = input.textContent.toString().slice(0, -1);
@@ -103,7 +104,7 @@ function calculate(){
     numOne = answers.textContent;
     operator = ''
     numTwo = ''
-    input.textContent = `${numOne} ${operator} ${numTwo}`;
+    input.textContent = answers.textContent.toString();
     }
   }
 
